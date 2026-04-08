@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration packages="org.apache.logging.log4j.core">
+    <Appenders>
+        <!-- Console appender for test output -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%-5level] %logger{36} - %msg%n" />
+        </Console>
+
+        <!-- File appender for detailed logs -->
+        <File name="File" fileName="target/load-tests.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%-5level] %logger{36} - %msg%n" />
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- JMeter-specific loggers -->
+        <Logger name="org.apache.jmeter" level="INFO" />
+        
+        <!-- Application loggers -->
+        <Logger name="com.linpark" level="DEBUG" />
+        <Logger name="us.abstracta.jmeter" level="INFO" />
+
+        <!-- Root logger -->
+        <Root level="INFO">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="File" />
+        </Root>
+    </Loggers>
+</Configuration>

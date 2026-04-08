@@ -1,0 +1,21 @@
+name: "API Read-Only"
+steps:
+  - method: "GET"
+    path: "/get?param=users"
+    assertions:
+      - statusCode: 200
+
+  - method: "GET"
+    path: "/get?param=products"
+    assertions:
+      - statusCode: 200
+
+  - method: "GET"
+    path: "/get?param=orders"
+    assertions:
+      - statusCode: 200
+
+  - method: "GET"
+    path: "/status/200"
+    assertions:
+      - statusCode: 200

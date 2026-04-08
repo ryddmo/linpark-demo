@@ -1,0 +1,97 @@
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.backup
+release.properties
+.flattened-pom.xml
+
+# IDE - IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# IDE - VS Code
+.vscode/
+*.code-workspace
+
+# IDE - Eclipse
+.classpath
+.project
+.settings/
+.factorypath
+
+# IDE - NetBeans
+nbproject/
+.nb-gradle/
+
+# IDE - Sublime
+*.sublime-project
+*.sublime-workspace
+
+# IDE - Vim
+.vim/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# IDE - General
+*.log
+*.out
+*.pid
+*.seed
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Java
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Build files
+build/
+dist/
+*.o
+*.so
+
+# Dependencies (if using local repo)
+.m2/
+
+# Test reports
+surefire-reports/
+failsafe-reports/
+junit-reports/
+
+# Coverage
+.jacoco.exec
+coverage.xml
+*.gcda
+*.gcno
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+tmp/
+temp/
+
+# Environment
+.env
+.env.local
+.env.*.local

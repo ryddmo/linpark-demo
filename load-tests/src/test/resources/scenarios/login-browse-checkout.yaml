@@ -1,0 +1,30 @@
+name: "Login → Browse → Checkout"
+steps:
+  - method: "POST"
+    path: "/post"
+    body: '{"username":"testuser","password":"testpass"}'
+    headers:
+      Content-Type: "application/json"
+    assertions:
+      - statusCode: 200
+
+  - method: "GET"
+    path: "/get"
+    assertions:
+      - statusCode: 200
+
+  - method: "POST"
+    path: "/post"
+    body: '{"action":"add_to_cart","item":"widget","quantity":1}'
+    headers:
+      Content-Type: "application/json"
+    assertions:
+      - statusCode: 200
+
+  - method: "POST"
+    path: "/post"
+    body: '{"action":"checkout","paymentMethod":"credit_card"}'
+    headers:
+      Content-Type: "application/json"
+    assertions:
+      - statusCode: 200

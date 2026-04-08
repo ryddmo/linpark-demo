@@ -1,0 +1,10 @@
+defaults:
+  virtualUsers: 10
+  duration: 60
+  rampUp: 5
+  targetUrl: "http://httpbin.org"
+  thinkTime: 500
+
+scenarios:
+  - login-browse-checkout
+  - api-read-only
